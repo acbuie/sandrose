@@ -22,20 +22,20 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.mypy]
-follow_imports = silent
-strict_optional = True
-warn_redundant_casts = True
-warn_unused_ignores = True
-disallow_any_generics = True
-check_untyped_defs = True
-no_implicit_reexport = True
-disallow_untyped_defs = True
-ignore_missing_imports = True
-plugins = numpy.typing.mypy_plugin
+follow_imports = "silent"
+strict_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+disallow_any_generics = true
+check_untyped_defs = true
+no_implicit_reexport = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+plugins = "numpy.typing.mypy_plugin"
 
 [[tool.mypy.overrides]]
-module = 'tests.*'
-ignore_errors = True
+module = "tests.*"
+ignore_errors = true
 
 [tool.isort]
 profile = "black"
@@ -53,8 +53,8 @@ exclude = '''
 
 (
   /(
-      \.eggs         # exclude a few common directories in the
-    | \.git          # root of the project
+      \.eggs
+    | \.git
     | \.hg
     | \.mypy_cache
     | \.tox
