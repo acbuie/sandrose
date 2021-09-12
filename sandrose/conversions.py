@@ -2,7 +2,8 @@ from math import log
 
 import numpy as np
 import pandas as pd
-from common import CARDINAL_DIRECTIONS
+
+from sandrose.common.constants import CARDINAL_DIRECTIONS
 
 
 def wind_log_law(
