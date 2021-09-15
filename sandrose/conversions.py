@@ -1,3 +1,21 @@
+"""
+Sandrose
+Copyright (C) 2021  Aidan Buie
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+"""
+
 from math import log
 
 import numpy as np
@@ -9,6 +27,7 @@ from sandrose.common.constants import CARDINAL_DIRECTIONS
 def wind_log_law(
     v_rec_col: pd.Series,
     z_rec: float,
+    *,
     z_ref: float = 10.0,
     z_0: float = 0.1,
 ) -> np.ndarray:
@@ -39,6 +58,7 @@ def wind_log_law(
 def wind_power_law(
     v_rec_col: pd.Series,
     z_rec: float,
+    *,
     z_ref: float = 10.0,
     alpha: float = (1.0 / 7.0),
 ) -> np.ndarray:
