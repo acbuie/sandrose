@@ -83,7 +83,7 @@ _fancy image output_
 from sandrose import conversions
 ```
 
-##### Wind Conversions
+#### Wind Conversions
 
 These functions are supplied as a means to normalize wind data recorded at varying elevations.
 
@@ -97,7 +97,7 @@ conversions.wind_power_law(wind_data, z_rec=10.0, z_ref=80.0)
 
 _fancy image output_
 
-##### Angular Converions
+#### Angular Converions
 
 The default (and currently only supported) binning method places each drift potential calculation into one of the 16 carindal compass directions. Should your data only supply numerical degree direction, `conversions.degree_to_cardinal` will convert the data into the required format.
 
@@ -126,8 +126,8 @@ Coming soon!
 
 ## License
 
-This work is licensed under the GNU GPLv3 license.
+This work is licensed under the [GNU GPLv3 license](https://github.com/acbuie/sandrose/blob/main/LICENSE.txt).
 
 ## Contributing
 
-See CONTRIBUTING.MD
+See [CONTRIBUTING.md](https://github.com/acbuie/sandrose/blob/main/CONTRIBUTING.md)
