@@ -8,28 +8,38 @@ We love your input! We want to make contributing to this project as easy and tra
 - Proposing new features
 - Becoming a maintainer
 
+---
+
 ## We Develop with Github
 
 We use github to host code, to track issues and feature requests, as well as accept pull requests.
 
-## We Use [Github Flow](https://guides.github.com/introduction/flow/index.html), So All Code Changes Happen Through Pull Requests
+---
 
-Pull requests are the best way to propose changes to the codebase (we use [Github Flow](https://guides.github.com/introduction/flow/index.html)). We actively welcome your pull requests:
+## Proposing Changes
 
-1. Fork the repo and create your branch from `master`.
+Pull requests are the best way to propose changes to the codebase.
+
+1. Fork the repo and create your branch from `main`.
 2. If you've added code that should be tested, add tests.
 3. If you've changed APIs, update the documentation.
 4. Ensure the test suite passes.
 5. Make sure your code lints.
 6. Issue that pull request!
 
-## Any contributions you make will be under the MIT Software License
+---
 
-In short, when you submit code changes, your submissions are understood to be under the same [MIT License](http://choosealicense.com/licenses/mit/) that covers the project. Feel free to contact the maintainers if that's a concern.
+## Any contributions you make will be under the GNU GPLv3 License.
+
+In short, when you submit code changes, your submissions are understood to be under the same [GNU GPLv3 License](https://github.com/acbuie/sandrose/blob/main/LICENSE.txt) that covers the project. Feel free to contact the maintainers if that's a concern.
+
+---
 
 ## Report bugs using Github's [issues](https://github.com/briandk/transcriptase-atom/issues)
 
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](); it's that easy!
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue]().
+
+---
 
 ## Write bug reports with detail, background, and sample code
 
@@ -44,14 +54,18 @@ We use GitHub issues to track public bugs. Report a bug by [opening a new issue]
 - Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
 - An example [stackoverflow question](http://stackoverflow.com/q/12488905/180626).
 
+---
+
 ## Use a Consistent Coding Style
 
 - Run `flake8`, `isort`, and `black` before issuing any pull requests.
-- Configurations for these tools can be found in the repositories `pyproject.toml` and `setup.cfg`.
+  - Configurations for these tools can be found in the repositories `pyproject.toml` and `setup.cfg`.
+- Type hints are appreciated, but not strictly necessary.
+- Create docstrings for all functions, except for tests.
+  - Use the sphinx style.
+  - One line docstrings for tests are ok, but not necessary.
 
-## License
-
-By contributing, you agree that your contributions will be licensed under its GNU GPLv3 License.
+---
 
 ## References
 
