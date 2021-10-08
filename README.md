@@ -1,3 +1,8 @@
+![License](https://img.shields.io/github/license/acbuie/sandrose) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) ![Commit](https://img.shields.io/github/last-commit/acbuie/sandrose)
+
+<!-- ![Package version](https://img.shields.io/pypi/v/sandrose)
+![Python version](https://img.shields.io/pypi/pyversions/sandrose) -->
+
 # **Sandrose**
 
 **Sandrose** is a Python library to aid in the analysis of aeolian sand transport using wind data. It simplifies the calculation of Resulant Drift Potential and Direction, and provides access to simple polar bar plots for quick visualization.
@@ -25,6 +30,15 @@ $ poetry add sandrose
 $ conda install sandrose
 ``` -->
 
+Or, install from GitHub (requires [git](https://git-scm.com/)):
+
+```console
+$ pip install "git+https://github.com/acbuie/sandrose.git#egg=sandrose"
+$ poetry add git+https://github.com/acbuie/sandrose.git#egg=sandrose
+```
+
+As always, it's recommended to install within a python virtual environment.
+
 ---
 
 ## **Usage**
@@ -48,6 +62,8 @@ There are currently _5_ different methods to sum per-record drift potentials, an
 - `sum_yearly()`: Sum _dp_ values, binning yearly and directionally.
 - `sum_all()`: Sum _dp_ values without time binning, but with directional binning.
 - `sum_dp()`: Sum _dp_ values without time binning or directional binning. Useful for finding RDP/DP ratio.
+
+---
 
 ## **Examples**
 
@@ -124,10 +140,14 @@ Some useful pandas functions related to datetimes:
 
 Coming soon!
 
+---
+
 ## License
 
 This work is licensed under the [GNU GPLv3 license](https://github.com/acbuie/sandrose/blob/main/LICENSE.txt).
 
+---
+
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/acbuie/sandrose/blob/main/CONTRIBUTING.md)
+See [here](https://github.com/acbuie/sandrose/blob/main/CONTRIBUTING.md).
