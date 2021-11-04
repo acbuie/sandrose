@@ -71,6 +71,7 @@ def drift_potential(
     speed_bins = pd.cut(idf["Speed"], bins)
 
     avg = idf["Speed"].groupby(speed_bins).mean().to_numpy()
+    avg[np.isnan(avg)] = 0  # Convert any NaN to 0
     weighting_factor = avg ** 2 * (avg - v_thresh)
 
     dp_matrix = t_vals * weighting_factor
@@ -79,7 +80,6 @@ def drift_potential(
     if remove_negatives:
         dp_matrix[dp_matrix < 0] = 0
 
-    # for printing
     df_mat = pd.DataFrame(
         dp_matrix / 100,
         index=list(CARDINAL_DIRECTIONS.keys()),
