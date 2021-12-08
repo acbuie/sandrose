@@ -1,9 +1,22 @@
-![License](https://img.shields.io/github/license/acbuie/sandrose) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) ![Commit](https://img.shields.io/github/last-commit/acbuie/sandrose)
 
 <!-- ![Package version](https://img.shields.io/pypi/v/sandrose)
 ![Python version](https://img.shields.io/pypi/pyversions/sandrose) -->
 
-# **Sandrose**
+<p align="center">
+    <img src="" alt="Sandrose">
+</p>
+
+<div align="center">
+    <a href="https://github.com/psf/black" target="_blank">
+        <img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="Code style">
+    </a>
+    <a href="https://github.com/acbuie/sandrose/blob/main/LICENSE.txt" target="_blank">
+        <img src="https://img.shields.io/github/license/acbuie/sandrose" alt="License">
+    </a>
+    <a href="https://github.com/acbuie/sandrose/commits/" target="_blank">
+        <img src="https://img.shields.io/github/last-commit/acbuie/sandrose">
+    </a>
+</div>
 
 **Sandrose** is a Python library to aid in the analysis of aeolian sand transport using wind data. It simplifies the calculation of Resulant Drift Potential and Direction, and provides access to simple polar bar plots for quick visualization.
 
